@@ -1,0 +1,44 @@
+{
+    "$schema": "https://statics.teams.microsoft.com/sdk/v1.1/manifest/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.1",
+    "version": "0.0.1",
+    "id": "{{BOT_ID}}",
+    "packageName": "com.yourbot.msteams.myapp",
+    "developer": {
+        "name": "{{firstname lastname}}",
+        "websiteUrl": "https://{{HTTPS_URL}}",
+        "privacyUrl": "https://{{HTTPS_URL}}/privacy",
+        "termsOfUseUrl": "https://{{HTTPS_URL}}/termsofuse"
+    },
+    "icons": {
+        "color": "teamsng5_88.png",
+        "outline": "teamsng5_44.png"
+    },
+    "name": {
+        "short": "YourBot",
+        "full": "YourBot Microsoft Teams application"
+    },
+    "description": {
+        "short": "YourBot Microsoft Teams application",
+        "full": "YourBot Microsoft Teams application"
+    },
+    "accentColor": "#235EA5",
+    "bots": [
+        {
+            "botId": "{{BOT_ID}}",
+            "scopes": [
+                "personal",
+                "team"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "*.login.microsoftonline.com",
+        "{{HTTPS_URL}}",
+        "*.graph.microsoft.com"
+    ]
+}
